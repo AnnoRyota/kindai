@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- <link href="../dist/output.css" rel="stylesheet" /> -->
     <link rel="stylesheet" href="css/style.css" />
-    <title>KINDAI ONLINECLASS チェックテスト</title>
+    <title>KINDAI ONLINECLASS アンケート</title>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
@@ -58,7 +58,7 @@
           <li class="py-2"><a href="/" class="">メッセージ<img src="images/plus.svg" class="w-4 h-4 inline-block -mt-1 ml-4"></a></li>
           <li class="py-2"><a href="record.html" class="">学習状況の管理<i class="fa-solid fa-minus text-primary ml-4"></i></a></li>
           <li class="py-2 pl-4 text-xs"><a href="record.html" class="">学習プログラム一覧</a></li>
-          <li class="py-2 pl-4 text-xs"><a href="checktest.html" class="active">チェックテスト作成</a></li>
+          <li class="py-2 pl-4 text-xs"><a href="checktest.html" class="">チェックテスト作成</a></li>
           <li class="py-2"><a href="https://pf.staging.kindai.design/library" class="" target="_blank">ライブラリ</a></li>
           <li class="py-2"><a href="questionnaire_list.html" class="">アンケート</a><a href="questionnaire.html"><img src="images/plus.svg" class="w-4 h-4 inline-block -mt-1 ml-4"></a></li>
           <li class="py-2"><a href="https://pf.staging.kindai.design/community" class="" target="_blank">コミュニティ</a></li>
@@ -73,7 +73,7 @@
           <li class="py-2"><a href="/" class="">各種申請</a></li>
           <li class="py-2"><a href="/" class="">成績確認</a></li>
           <li><hr class="mt-2 pb-2"></li>
-          <li class="py-2"><a href="setting.html" class=""><i class="fa-solid fa-gear"></i>登録情報の確認・設定</a></li>
+          <li class="py-2"><a href="setting.html" class="active"><i class="fa-solid fa-gear"></i>登録情報の確認・設定</a></li>
           <li><hr class="mt-2 pb-2"></li>
           <li class="py-2"><a href="/" class="">ログイン画面に戻る</a></li>
         </ul>
@@ -108,120 +108,116 @@
                 <a class="block text-base tracking-wide" href="javascript:history.back()">戻る</a>
               </div>
               <div class="grow items-center justify-center w-full">
-              <h2 class="text-lg tracking-wide text-center">チェックテスト作成</h2>
+              <h2 class="text-lg tracking-wide text-center">登録情報・設定</h2>
               </div>
               <div class="flex-none w-20 " ></div>
             </div>
 
           <div class="w-[95%] py-4 mx-auto bg-white">
             <ul class="flex gap-4 items-center mt-4 text-sm border-b border-b-slate-200">
-              <li class="inline-block px-4 pb-2"><a href="checktest_list.html">一覧</a></li>
-              <li class="inline-block px-4 pb-2 border-b-2 border-b-primary"><a href="checktest_question_list.html">設問</a></li>
-              <li class="inline-block px-4 pb-2"><a href="checktest_scoring.html">採点</a></li>
-              <li class="inline-block px-4 pb-2 text-primary"><a href="checktest.html"><img src="images/plus.svg" class="w-4 h-4 inline-block -mt-1 mr-2">テストを作成</a></li>
+              <li class="inline-block px-4 pb-2 border-b-2 border-b-primary"><a href="setting.html">プロフィール</a></li>
+              <!-- <li class="inline-block px-4 pb-2"><a href="">設問</a></li>
+              <li class="inline-block px-4 pb-2 "><a href="">採点</a></li> -->
+              <li class="inline-block px-4 pb-2"><a href="setting_other.html">その他設定</a></li>
             </ul>
-
             <div class="py-4">
-              <h3 class="px-2">設問一覧</h3>
-              <div class="px-2 py-4 border-b border-b-slate-200">
-              <p>設問の名称</p>
-              <div class="text-sm">
-              <div class="my-2 whitespace-nowrap">
-                <div class="flex text-xs text-slate-700 gap-4 items-center justify-between">
-                  <div class="flex gap-4 items-center">
-                    <p>登録日：2019年8月22日</p>
-                    <p>タグ：タグ名</p>
-                    <div class="flex">
-                      <span class="tag border border-primary text-primary">選択式</span>
-                    </div>
-                    <p class="button-white text-rose-700 border-rose-700">終了</p>
+             <div class="">
+              <h3 class="text-sm font-semibold text-slate-500">下記項目を入力して決定ボタンを押して登録ください。</h3>
+              <div class="w-2/3 mx-auto my-8">
+                <div class="py-4 text-sm">
+                  <div class="flex items-center gap-4">
+                  <h4 class="w-24 whitespace-nowrap">氏名</h4>
+                  <div class="grow">
+                    <p>近大　太郎</p>
                   </div>
-                  <div class="flex gap-4 text-sm">
-                    <p>配点</p>
-                    <p><span class="font-semibold">10点</span> / 100点</p>
                   </div>
                 </div>
-              </div>
-              <div class="flex justify-between mt-4">
-                <p class="text-sm w-3/5">設問の概要が入ります。</p>
-                <div class="flex items-center gap-4">
-                <p>正答率　 96.6%</p>
-                <button class="button">
-                  誤答分析
-                </button>
-                </div>
-            </div>
-            </div>
-            </div>
-              <div class="px-2 py-4 border-b border-b-slate-200">
-              <p>設問の名称</p>
-              <div class="text-sm">
-              <div class="my-2 whitespace-nowrap">
-                <div class="flex text-xs text-slate-700 gap-4 items-center justify-between">
-                  <div class="flex gap-4 items-center">
-                    <p>登録日：2019年8月22日</p>
-                    <p>タグ：タグ名</p>
-                    <div class="flex">
-                      <span class="tag border border-primary text-primary">選択式</span>
-                    </div>
-                    <p class="button-white text-rose-700 border-rose-700">終了</p>
-                  </div>
-                  <div class="flex gap-4 text-sm">
-                    <p>配点</p>
-                    <p><span class="font-semibold">10点</span> / 100点</p>
-                  </div>
-                </div>
-              </div>
-              <div class="flex justify-between mt-4">
-                <p class="text-sm w-3/5">設問の概要が入ります。</p>
-                <div class="flex items-center gap-4">
-                <p>正答率　 96.6%</p>
-                <button class="button">
-                  誤答分析
-                </button>
-                </div>
-            </div>
-            </div>
-            </div>
-              <div class="px-2 py-4 border-b border-b-slate-200">
-              <p>設問の名称</p>
-              <div class="text-sm">
-              <div class="my-2 whitespace-nowrap">
-                <div class="flex text-xs text-slate-700 gap-4 items-center justify-between">
-                  <div class="flex gap-4 items-center">
-                    <p>登録日：2019年8月22日</p>
-                    <p>タグ：タグ名</p>
-                    <div class="flex">
-                      <span class="tag border border-primary text-primary">選択式</span>
-                    </div>
-                    <p class="button-white text-rose-700 border-rose-700">終了</p>
-                  </div>
-                  <div class="flex gap-4 text-sm">
-                    <p>配点</p>
-                    <p><span class="font-semibold">10点</span> / 100点</p>
-                  </div>
-                </div>
-              </div>
-              <div class="flex justify-between mt-4">
-                <p class="text-sm w-3/5">設問の概要が入ります。</p>
-                <div class="flex items-center gap-4">
-                <p>正答率　 96.6%</p>
-                <button class="button">
-                  誤答分析
-                </button>
-                </div>
-            </div>
-            </div>
-            </div>
 
+                <div class="py-4 text-sm">
+                  <div class="flex items-center gap-4">
+                  <h4 class="w-24 whitespace-nowrap">所属</h4>
+                  <div class="grow">
+                    <p>理工学部　理工学科</p>
+                  </div>
+                  </div>
+                </div>
 
-            </div>
+                <div class="py-4 text-sm">
+                  <div class="flex items-center gap-4">
+                  <h4 class="w-24 whitespace-nowrap">生年月日</h4>
+                  <div class="grow">
+                    <p>2023年   1月 1日</p>
+                  </div>
+                  </div>
+                </div>
 
-            <div class="text-center">
-              <a class="button my-8" href="checktest_list.html">
-              戻る
+                <div class="py-4 text-sm">
+                  <div class="flex gap-4 items-center">
+                  <h4 class="w-24 whitespace-nowrap">あなたについて</h4>
+                  <div class="grow">
+                    <textarea class="w-full border border-slate-200 p-2 focus:border-none tracking-wide" rows="4"></textarea>
+                    <!-- <small class="text-slate-400">100文字以内で入力して下さい…</small> -->
+                  </div>
+                  </div>
+                </div>
+
+                <div class="py-4 text-sm">
+                  <div class="flex gap-4 items-center">
+                  <h4 class="w-24 whitespace-nowrap">目標</h4>
+                  <div class="grow">
+                    <textarea class="w-full border border-slate-200 p-2 focus:border-none tracking-wide" rows="4"></textarea>
+                    <!-- <small class="text-slate-400">100文字以内で入力して下さい…</small> -->
+                  </div>
+                  </div>
+                </div>
+
+                <div class="py-4 text-sm">
+                  <div class="flex gap-4 items-center">
+                  <h4 class="w-24 whitespace-nowrap">アイコン画像</h4>
+                  <div class="grow flex gap-6 items-center">
+                    <div class="w-24">
+                      <img src="images/01.png" alt="">
+                    </div>
+                    <button class="button-white bg-primary/5">
+                      アップロード
+                    </button>
+                  </div>
+                  </div>
+                </div>
+
+                <div class="py-4 text-sm">
+                  <div class="flex gap-4 items-center">
+                  <h4 class="w-24 whitespace-nowrap">興味がある業界</h4>
+                  <div class="grow">
+                    <textarea class="w-full border border-slate-200 p-2 focus:border-none tracking-wide" rows="4"></textarea>
+                    <!-- <small class="text-slate-400">100文字以内で入力して下さい…</small> -->
+                  </div>
+                  </div>
+                </div>
+
+                <div class="py-4 text-sm">
+                  <div class="flex gap-4 items-center">
+                  <h4 class="w-24 whitespace-nowrap">就きたい職業</h4>
+                  <div class="grow">
+                    <textarea class="w-full border border-slate-200 p-2 focus:border-none tracking-wide" rows="4"></textarea>
+                    <!-- <small class="text-slate-400">100文字以内で入力して下さい…</small> -->
+                  </div>
+                  </div>
+                </div>
+
+              <div class="text-center">
+              <a class="my-8 mx-2" href="checktest_list.html">
+              キャンセル
               </a>
+              <button class="button my-8 mx-2" href="checktest_score.html">
+              登録
+              </button>
+              </div>
+
+             </div>
             </div>
+
+
           </div>
         </main>
         <!-- <footer

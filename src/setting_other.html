@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- <link href="../dist/output.css" rel="stylesheet" /> -->
     <link rel="stylesheet" href="css/style.css" />
-    <title>KINDAI ONLINECLASS チェックテスト</title>
+    <title>KINDAI ONLINECLASS アンケート</title>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
@@ -58,7 +58,7 @@
           <li class="py-2"><a href="/" class="">メッセージ<img src="images/plus.svg" class="w-4 h-4 inline-block -mt-1 ml-4"></a></li>
           <li class="py-2"><a href="record.html" class="">学習状況の管理<i class="fa-solid fa-minus text-primary ml-4"></i></a></li>
           <li class="py-2 pl-4 text-xs"><a href="record.html" class="">学習プログラム一覧</a></li>
-          <li class="py-2 pl-4 text-xs"><a href="checktest.html" class="active">チェックテスト作成</a></li>
+          <li class="py-2 pl-4 text-xs"><a href="checktest.html" class="">チェックテスト作成</a></li>
           <li class="py-2"><a href="https://pf.staging.kindai.design/library" class="" target="_blank">ライブラリ</a></li>
           <li class="py-2"><a href="questionnaire_list.html" class="">アンケート</a><a href="questionnaire.html"><img src="images/plus.svg" class="w-4 h-4 inline-block -mt-1 ml-4"></a></li>
           <li class="py-2"><a href="https://pf.staging.kindai.design/community" class="" target="_blank">コミュニティ</a></li>
@@ -73,7 +73,7 @@
           <li class="py-2"><a href="/" class="">各種申請</a></li>
           <li class="py-2"><a href="/" class="">成績確認</a></li>
           <li><hr class="mt-2 pb-2"></li>
-          <li class="py-2"><a href="setting.html" class=""><i class="fa-solid fa-gear"></i>登録情報の確認・設定</a></li>
+          <li class="py-2"><a href="setting.html" class="active"><i class="fa-solid fa-gear"></i>登録情報の確認・設定</a></li>
           <li><hr class="mt-2 pb-2"></li>
           <li class="py-2"><a href="/" class="">ログイン画面に戻る</a></li>
         </ul>
@@ -108,120 +108,140 @@
                 <a class="block text-base tracking-wide" href="javascript:history.back()">戻る</a>
               </div>
               <div class="grow items-center justify-center w-full">
-              <h2 class="text-lg tracking-wide text-center">チェックテスト作成</h2>
+              <h2 class="text-lg tracking-wide text-center">登録情報・設定</h2>
               </div>
               <div class="flex-none w-20 " ></div>
             </div>
 
           <div class="w-[95%] py-4 mx-auto bg-white">
             <ul class="flex gap-4 items-center mt-4 text-sm border-b border-b-slate-200">
-              <li class="inline-block px-4 pb-2"><a href="checktest_list.html">一覧</a></li>
-              <li class="inline-block px-4 pb-2 border-b-2 border-b-primary"><a href="checktest_question_list.html">設問</a></li>
-              <li class="inline-block px-4 pb-2"><a href="checktest_scoring.html">採点</a></li>
-              <li class="inline-block px-4 pb-2 text-primary"><a href="checktest.html"><img src="images/plus.svg" class="w-4 h-4 inline-block -mt-1 mr-2">テストを作成</a></li>
+              <li class="inline-block px-4 pb-2"><a href="setting.html">プロフィール</a></li>
+              <!-- <li class="inline-block px-4 pb-2"><a href="">設問</a></li>
+              <li class="inline-block px-4 pb-2 "><a href="">採点</a></li> -->
+              <li class="inline-block px-4 pb-2 border-b-2 border-b-primary"><a href="setting_other.html">その他設定</a></li>
             </ul>
-
             <div class="py-4">
-              <h3 class="px-2">設問一覧</h3>
-              <div class="px-2 py-4 border-b border-b-slate-200">
-              <p>設問の名称</p>
-              <div class="text-sm">
-              <div class="my-2 whitespace-nowrap">
-                <div class="flex text-xs text-slate-700 gap-4 items-center justify-between">
-                  <div class="flex gap-4 items-center">
-                    <p>登録日：2019年8月22日</p>
-                    <p>タグ：タグ名</p>
-                    <div class="flex">
-                      <span class="tag border border-primary text-primary">選択式</span>
+             <div class="">
+              <h3 class="text-sm font-semibold text-slate-500">下記項目を入力して決定ボタンを押して登録ください。</h3>
+              <div class="w-2/3 mx-auto my-8">
+                <div class="mt-8">
+                  <div class="py-4 text-sm">
+                  <div class="flex gap-4 items-top">
+                  <h4 class="w-24 whitespace-nowrap">トップページ</h4>
+                  <div class="grow flex gap-4">
+                    <div>
+                    <input id="radio-1" name="default-radio" type="radio" class="mr-2 checked:text-primary checked:bg-primary focus:bg-primary" checked><label for="radio-1">クラシック</label>
                     </div>
-                    <p class="button-white text-rose-700 border-rose-700">終了</p>
-                  </div>
-                  <div class="flex gap-4 text-sm">
-                    <p>配点</p>
-                    <p><span class="font-semibold">10点</span> / 100点</p>
-                  </div>
-                </div>
-              </div>
-              <div class="flex justify-between mt-4">
-                <p class="text-sm w-3/5">設問の概要が入ります。</p>
-                <div class="flex items-center gap-4">
-                <p>正答率　 96.6%</p>
-                <button class="button">
-                  誤答分析
-                </button>
-                </div>
-            </div>
-            </div>
-            </div>
-              <div class="px-2 py-4 border-b border-b-slate-200">
-              <p>設問の名称</p>
-              <div class="text-sm">
-              <div class="my-2 whitespace-nowrap">
-                <div class="flex text-xs text-slate-700 gap-4 items-center justify-between">
-                  <div class="flex gap-4 items-center">
-                    <p>登録日：2019年8月22日</p>
-                    <p>タグ：タグ名</p>
-                    <div class="flex">
-                      <span class="tag border border-primary text-primary">選択式</span>
+                    <div>
+                    <input id="radio-2" name="default-radio" type="radio" class="mr-2" ><label for="radio-2">タイムライン</label>
                     </div>
-                    <p class="button-white text-rose-700 border-rose-700">終了</p>
                   </div>
-                  <div class="flex gap-4 text-sm">
-                    <p>配点</p>
-                    <p><span class="font-semibold">10点</span> / 100点</p>
                   </div>
                 </div>
-              </div>
-              <div class="flex justify-between mt-4">
-                <p class="text-sm w-3/5">設問の概要が入ります。</p>
-                <div class="flex items-center gap-4">
-                <p>正答率　 96.6%</p>
-                <button class="button">
-                  誤答分析
-                </button>
-                </div>
-            </div>
-            </div>
-            </div>
-              <div class="px-2 py-4 border-b border-b-slate-200">
-              <p>設問の名称</p>
-              <div class="text-sm">
-              <div class="my-2 whitespace-nowrap">
-                <div class="flex text-xs text-slate-700 gap-4 items-center justify-between">
-                  <div class="flex gap-4 items-center">
-                    <p>登録日：2019年8月22日</p>
-                    <p>タグ：タグ名</p>
-                    <div class="flex">
-                      <span class="tag border border-primary text-primary">選択式</span>
+
+                <div class="py-4 text-sm">
+                  <div class="flex gap-4 items-top">
+                  <h4 class="w-24 whitespace-nowrap">いいね</h4>
+                  <div class="grow flex flex-col gap-4">
+                    <div>
+                    <input id="radio-1" name="default-radio" type="radio" class="mr-2 checked:text-primary checked:bg-primary focus:bg-primary" checked><label for="radio-1">全てのユーザーからいいねを受け取る</label>
                     </div>
-                    <p class="button-white text-rose-700 border-rose-700">終了</p>
+                    <div>
+                    <input id="radio-2" name="default-radio" type="radio" class="mr-2" ><label for="radio-2">いいねを受け取らない</label>
+                    </div>
+                    <div>
+                    <input id="radio-3" name="default-radio" type="radio" class="mr-2" ><label for="radio-3">フォロワーのみいいねを受け取る</label>
+                    </div>
                   </div>
-                  <div class="flex gap-4 text-sm">
-                    <p>配点</p>
-                    <p><span class="font-semibold">10点</span> / 100点</p>
                   </div>
                 </div>
-              </div>
-              <div class="flex justify-between mt-4">
-                <p class="text-sm w-3/5">設問の概要が入ります。</p>
-                <div class="flex items-center gap-4">
-                <p>正答率　 96.6%</p>
-                <button class="button">
-                  誤答分析
-                </button>
+
+                <div class="py-4 text-sm">
+                  <div class="flex gap-4 items-top">
+                  <h4 class="w-24 whitespace-nowrap">フォロー</h4>
+                  <div class="grow flex flex-col gap-4">
+                    <div>
+                    <input id="radio-1" name="default-radio" type="radio" class="mr-2 checked:text-primary checked:bg-primary focus:bg-primary" checked><label for="radio-1">全てのユーザーからフォローを受け付ける</label>
+                    </div>
+                    <div>
+                    <input id="radio-2" name="default-radio" type="radio" class="mr-2" ><label for="radio-2">フォローを受け取らない</label>
+                    </div>
+                  </div>
+                  </div>
                 </div>
-            </div>
-            </div>
-            </div>
 
+                <div class="py-4 text-sm">
+                  <div class="flex gap-4 items-top">
+                  <h4 class="w-24 whitespace-nowrap">通知方法</h4>
+                  <div class="grow flex gap-6">
+                    <div>
+                    <input id="radio-1" name="default-radio" type="radio" class="mr-2 checked:text-primary checked:bg-primary focus:bg-primary" checked><label for="radio-1">Slack</label>
+                    <div class="mt-4">
+                    <p>Slackと連携する</p>
+                    <button class="button-white bg-primary/5 mt-2 disabled:opacity-70" disabled>
+                      連携済
+                    </button>
+                    </div>
+                    </div>
+                    <div>
+                    <input id="radio-2" name="default-radio" type="radio" class="mr-2" ><label for="radio-2">LINE</label>
+                    <div class="mt-4">
+                    <p>LINEと連携する</p>
+                    <button class="button-white bg-primary/5 mt-2">
+                      連携
+                    </button>
+                    </div>
+                    </div>
+                    <div>
+                    <input id="radio-2" name="default-radio" type="radio" class="mr-2" ><label for="radio-2">メール</label>
+                    <div class="mt-4">
+                    <p>メールアドレスを登録</p>
+                    <div class="flex gap-4 mt-2">
+                      <input type="text" class="w-48 h-[30px] border border-slate-200 focus:border-none tracking-wide">
+                      <button class="button-white bg-primary/5">
+                      送信
+                      </button>
+                    </div>
+                    </div>
+                    </div>
+                  </div>
+                  </div>
 
-            </div>
+                  <div class="mt-8">
+                  <div class="py-4 text-sm">
+                  <div class="flex gap-4 items-top">
+                  <h4 class="w-24 whitespace-nowrap">通知方法</h4>
+                  <div class="grow flex gap-4">
+                    <div>
+                    <input id="radio-1" name="default-radio" type="checkbox" class="mr-2"><label for="radio-1">いいね</label>
+                    </div>
+                    <div>
+                    <input id="radio-2" name="default-radio" type="checkbox" class="mr-2" ><label for="radio-2">フォロー</label>
+                    </div>
+                    <div>
+                    <input id="radio-2" name="default-radio" type="checkbox" class="mr-2" ><label for="radio-2">お知らせ</label>
+                    </div>
+                    <div>
+                    <input id="radio-2" name="default-radio" type="checkbox" class="mr-2" ><label for="radio-2">メッセージ</label>
+                    </div>
+                  </div>
+                  </div>
+                </div>
+                </div>
 
-            <div class="text-center">
-              <a class="button my-8" href="checktest_list.html">
-              戻る
+              <div class="text-center">
+              <a class="my-8 mx-2" href="checktest_list.html">
+              キャンセル
               </a>
+              <button class="button my-8 mx-2" href="checktest_score.html">
+              登録
+              </button>
+              </div>
+
+             </div>
             </div>
+
+
           </div>
         </main>
         <!-- <footer

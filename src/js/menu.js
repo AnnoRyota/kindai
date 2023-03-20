@@ -9,7 +9,7 @@
         inactive: ["sidebar-inactive"]
       },
       classesToApplyForMain = {
-        active: ["pl-[224px]"],
+        active: ["md:pl-[224px]"],
         inactive: []
       },
       classesToApplyForMenuButton = {

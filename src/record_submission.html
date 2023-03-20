@@ -50,16 +50,17 @@
           />
         </div>
         <ul class="w-full p-4 text-sm text-slate-500">
-          <li class="py-2"><a href="index.html" class="active">トップ</a></li>
+          <li class="py-2"><a href="index.html" class="">トップ</a></li>
           <li class="py-2"><a href="timeline.html" class="">タイムライン</a></li>
-          <li class="py-2"><a href="https://pf.staging.kindai.design/announcement" class="" target="_blank">全てのお知らせ<img src="images/plus.svg" class="w-4 h-4 inline-block -mt-1 ml-4"></a></li>
+          <li class="py-2"><a href="schedule.html" class="">スケジュール</a></li>
+          <li class="py-2"><a href="https://pf.staging.kindai.design/announcement" class="" target="_blank">全てのお知らせ</a><a href="https://pf.staging.kindai.design/activity/teacher" target="_blank"><img src="images/plus.svg" class="w-4 h-4 inline-block -mt-1 ml-4"></a></li>
           <li class="py-2"><a href="https://pf.staging.kindai.design/student/activity" class="" target="_blank">全ての学びの記録</a></li>
           <li class="py-2"><a href="/" class="">メッセージ<img src="images/plus.svg" class="w-4 h-4 inline-block -mt-1 ml-4"></a></li>
           <li class="py-2"><a href="record.html" class="">学習状況の管理<i class="fa-solid fa-minus text-primary ml-4"></i></a></li>
-          <li class="py-2 pl-4 text-xs"><a href="/" class="">学習プログラム一覧</a></li>
+          <li class="py-2 pl-4 text-xs"><a href="record.html" class="active">学習プログラム一覧</a></li>
           <li class="py-2 pl-4 text-xs"><a href="checktest.html" class="">チェックテスト作成</a></li>
           <li class="py-2"><a href="https://pf.staging.kindai.design/library" class="" target="_blank">ライブラリ</a></li>
-          <li class="py-2"><a href="questionnaire_list.html" class="">アンケート<img src="images/plus.svg" class="w-4 h-4 inline-block -mt-1 ml-4"></a></li>
+          <li class="py-2"><a href="questionnaire_list.html" class="">アンケート</a><a href="questionnaire.html"><img src="images/plus.svg" class="w-4 h-4 inline-block -mt-1 ml-4"></a></li>
           <li class="py-2"><a href="https://pf.staging.kindai.design/community" class="" target="_blank">コミュニティ</a></li>
           <li class="py-2"><a href="https://pf.staging.kindai.design/board" class="" target="_blank">掲示板</a></li>
           <li class="py-2 mt-4"><h4 class="flex items-center text-primary before:mr-2 after:ml-2 before:content-[''] before:h-[1px] before:w-4 before:bg-slate-300 after:content-[''] after:h-[1px] after:flex-grow after:bg-slate-300"><span class="">オンライン授業</span></h4></li>
@@ -72,7 +73,7 @@
           <li class="py-2"><a href="/" class="">各種申請</a></li>
           <li class="py-2"><a href="/" class="">成績確認</a></li>
           <li><hr class="mt-2 pb-2"></li>
-          <li class="py-2"><a href="/" class=""><i class="fa-solid fa-gear"></i>登録情報の確認・設定</a></li>
+          <li class="py-2"><a href="setting.html" class=""><i class="fa-solid fa-gear"></i>登録情報の確認・設定</a></li>
           <li><hr class="mt-2 pb-2"></li>
           <li class="py-2"><a href="/" class="">ログイン画面に戻る</a></li>
         </ul>
@@ -104,7 +105,7 @@
           <div class="w-[95%] mx-auto flex items-center my-8">
               <div class="flex gap-1 items-center w-fit self-center whitespace-nowrap text-primary">
                 <i class="fa-solid fa-chevron-left"></i>
-                <a class="block text-base tracking-wide" href="/">戻る</a>
+                <a class="block text-base tracking-wide" href="javascript:history.back()">戻る</a>
               </div>
               <div class="grow items-center justify-center w-full">
               <h2 class="text-lg tracking-wide text-center">学習状況</h2>
@@ -194,132 +195,123 @@
             </div>
 
             <div class="flex gap-2 items-center justify-between mt-8 px-2 pb-2 text-sm border-b border-b-slate-200">
-              <p class="">チェックテスト受験履歴</p>
-              <p class="">受験回数<span class="ml-2 text-2xl">2/10</span></p>
+              <p class="">提出履歴</p>
+              <p class="">提出回数<span class="ml-2 text-2xl">2/10</span></p>
             </div>
 
             <div class="py-4 px-2 border-b border-slate-200">
-            <div class="flex gap-4">
-              <div>
-              <h3 class="">チェックテストのタイトル<span class="tag border border-primary text-primary">受講済み</span></h3>
-              <div class="my-2">
-                <div class="flex text-xs text-slate-700 gap-4 items-center">
-                <p>登録日：2019年8月22日</p>
-                <p>受験期限：2019年8月22日</p>
-                <p>受験日：2019年8月23日</p>
-                <p>設問数：10</p>
-                <p>合格点：100点</p>
-                <div class="flex">
-                  <span class="tag border border-primary text-primary">択一式・選択式</span>
-                  <span class="tag border border-primary text-primary">穴埋め式</span>
-                  <span class="tag border border-primary text-primary">記述式</span>
+            <div class="flex gap-4 justify-between items-center">
+              <div class="flex gap-4 items-center">
+                <p>1</p>
+                <div>
+                  <img src="images/pdf.png" alt="">
+                </div>
+                <div class="flex flex-col gap-2">
+                  <h3 class="">チェックテストのタイトル</h3>
+                  <p class="text-xs">提出日：2019年8月22日 12:12</p>
                 </div>
               </div>
-              <div class="flex text-xs gap-4 items-center">
-                <p>カテゴリ：カテゴリ名</p>
-                <p>サブカテゴリ：サブカテゴリ名</p>
-              </div>
-              </div>
-              </div>
-              <div class="flex gap-4">
-                  <div class="flex content-center items-center h-[45px]">
-                    <img class="h-full" src="images/01.png" alt="dummy" />
-                    <p class="ml-4 text-sm text-primary">山田 太郎 先生</p>
+
+              <div class="w-1/2 flex flex-col gap-2">
+                <div class="flex gap-4 items-center">
+                  <p class="w-10 text-xs">評価</p>
+                  <p class="text-2xl">A</p>
+                </div>
+                <div class="flex gap-4 items-center">
+                  <div class="w-10">
+                    <img class="w-full" src="images/01.png" alt="">
                   </div>
+                  <p class="text-sm">良い進捗で学習が進んでいますね。<br>引き続き、頑張りましょう。</p>
                 </div>
-            </div>
-            <div class="flex justify-between gap-4 mt-2">
-              <div class="w-4/5 text-sm min-h-[3em]">
-                <p>チェックテストの概要が入ります。</p>
               </div>
-              <div class="flex self-end items-center gap-4">
-                <p><span class="font-semibold">80点</span> / 100点</p>
-                <button class="button-white" onclick="location.href='/'">詳細</button>
+
+              <div class="flex gap-4 mt-2">
+              <button class="button-white whitespace-nowrap">
+                再提出
+              </button>
+              <button class="button-white whitespace-nowrap">
+                受講
+              </button>
+              </div>
+            </div>
+            </div>
+            <div class="py-4 px-2 border-b border-slate-200">
+            <div class="flex gap-4 justify-between items-center">
+              <div class="flex gap-4 items-center">
+                <p>2</p>
+                <div>
+                  <img src="images/pdf.png" alt="">
+                </div>
+                <div class="flex flex-col gap-2">
+                  <h3 class="">チェックテストのタイトル</h3>
+                  <p class="text-xs">提出日：2019年8月22日 12:12</p>
+                </div>
+              </div>
+
+              <div class="w-1/2 flex flex-col gap-2">
+                <div class="flex gap-4 items-center">
+                  <p class="w-10 text-xs">評価</p>
+                  <p class="text-2xl">B</p>
+                </div>
+                <div class="flex gap-4 items-center">
+                  <div class="w-10">
+                    <img class="w-full" src="images/01.png" alt="">
+                  </div>
+                  <p class="text-sm">良い進捗で学習が進んでいますね。<br>引き続き、頑張りましょう。</p>
+                </div>
+              </div>
+
+              <div class="flex gap-4 mt-2">
+              <button class="button-white whitespace-nowrap">
+                再提出
+              </button>
+              <button class="button-white whitespace-nowrap">
+                受講
+              </button>
+              </div>
+            </div>
+            </div>
+            <div class="py-4 px-2 border-b border-slate-200">
+            <div class="flex gap-4 justify-between items-center">
+              <div class="flex gap-4 items-center">
+                <p>3</p>
+                <div>
+                  <img src="images/pdf.png" alt="">
+                </div>
+                <div class="flex flex-col gap-2">
+                  <h3 class="">チェックテストのタイトル</h3>
+                  <p class="text-xs">提出日：2019年8月22日 12:12</p>
+                </div>
+              </div>
+
+              <div class="w-1/2 flex flex-col gap-2">
+                <div class="flex gap-4 items-center">
+                  <p class="w-10 text-xs">評価</p>
+                  <p class="text-2xl"></p>
+                </div>
+                <div class="flex gap-4 items-center">
+                  <button class="button bg-rose-700 whitespace-nowrap">評価する</button>
+                </div>
+              </div>
+
+              <div class="flex gap-4 mt-2">
+              <button class="button-white whitespace-nowrap">
+                再提出
+              </button>
+              <button class="button-white whitespace-nowrap">
+                受講
+              </button>
               </div>
             </div>
             </div>
 
-            <div class="py-4 px-2 border-b border-slate-200">
-            <div class="flex gap-4">
-              <div>
-              <h3 class="">チェックテストのタイトル<span class="tag border border-primary text-primary">受験済</span></h3>
-              <div class="my-2">
-                <div class="flex text-xs text-slate-700 gap-4 items-center">
-                <p>登録日：2019年8月22日</p>
-                <p>受験期限：2019年8月22日</p>
-                <p>受験日：2019年8月23日</p>
-                <p>設問数：10</p>
-                <p>合格点：100点</p>
-                <div class="flex">
-                  <span class="tag border border-primary text-primary">択一式・選択式</span>
-                  <span class="tag border border-primary text-primary">穴埋め式</span>
-                  <span class="tag border border-primary text-primary">記述式</span>
-                </div>
-              </div>
-              <div class="flex text-xs gap-4 items-center">
-                <p>カテゴリ：カテゴリ名</p>
-                <p>サブカテゴリ：サブカテゴリ名</p>
-              </div>
-              </div>
-              </div>
-              <div class="flex gap-4">
-                  <div class="flex content-center items-center h-[45px]">
-                    <img class="h-full" src="images/01.png" alt="dummy" />
-                    <p class="ml-4 text-sm text-primary">山田 太郎 先生</p>
-                  </div>
-                </div>
-            </div>
-            <div class="flex justify-between gap-4 mt-2">
-              <div class="w-4/5 text-sm min-h-[3em]">
-                <p>チェックテストの概要が入ります。<br>チェックテストの概要が入ります。<br>チェックテストの概要が入ります。</p>
-              </div>
-              <div class="flex self-end items-center gap-4">
-                <p><span class="text-red font-semibold">採点待ち</span></p>
-                <button class="button-white" onclick="location.href='/'">詳細</button>
-              </div>
-            </div>
+
+            <div class="text-center">
+              <button class="button my-8 mx-2" href="checktest_score.html">
+              戻る
+              </button>
             </div>
 
-            <div class="py-4 px-2 border-b border-slate-200">
-            <div class="flex gap-4">
-              <div>
-              <h3 class="">チェックテストのタイトル<span class="tag border border-primary text-primary">受験済</span></h3>
-              <div class="my-2">
-                <div class="flex text-xs text-slate-700 gap-4 items-center">
-                <p>登録日：2019年8月22日</p>
-                <p>受験期限：2019年8月22日</p>
-                <p>受験日：2019年8月23日</p>
-                <p>設問数：10</p>
-                <p>合格点：100点</p>
-                <div class="flex">
-                  <span class="tag border border-primary text-primary">択一式・選択式</span>
-                  <span class="tag border border-primary text-primary">穴埋め式</span>
-                  <span class="tag border border-primary text-primary">記述式</span>
-                </div>
-              </div>
-              <div class="flex text-xs gap-4 items-center">
-                <p>カテゴリ：カテゴリ名</p>
-                <p>サブカテゴリ：サブカテゴリ名</p>
-              </div>
-              </div>
-              </div>
-              <div class="flex gap-4">
-                  <div class="flex content-center items-center h-[45px]">
-                    <img class="h-full" src="images/01.png" alt="dummy" />
-                    <p class="ml-4 text-sm text-primary">山田 太郎 先生</p>
-                  </div>
-                </div>
-            </div>
-            <div class="flex justify-between gap-4 mt-2">
-              <div class="w-4/5 text-sm min-h-[3em]">
-                <p>チェックテストの概要が入ります。<br>チェックテストの概要が入ります。<br>チェックテストの概要が入ります。</p>
-              </div>
-              <div class="flex self-end items-center gap-4">
-                <p><span class="font-semibold">未受験</span></p>
-                <button class="button" onclick="location.href='/'">受験</button>
-              </div>
-            </div>
-            </div>
 
           </div>
         </main>

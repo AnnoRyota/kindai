@@ -39,7 +39,7 @@
         id="sidebar"
       > -->
       <nav
-        class="fixed z-10 pin-y w-56 h-screen bg-primary/5 sidebar-inactive overflow-y-auto pb-[60px]"
+        class="fixed z-10 pin-y w-56 h-screen bg-primary/5 sidebar-inactive overflow-y-auto pb-[60px] hidden md:block"
         id="sidebar"
       >
         <div class="w-full">
@@ -52,14 +52,15 @@
         <ul class="w-full p-4 text-sm text-slate-500">
           <li class="py-2"><a href="index.html" class="active">トップ</a></li>
           <li class="py-2"><a href="timeline.html" class="">タイムライン</a></li>
-          <li class="py-2"><a href="https://pf.staging.kindai.design/announcement" class="" target="_blank">全てのお知らせ<img src="images/plus.svg" class="w-4 h-4 inline-block -mt-1 ml-4"></a></li>
+          <li class="py-2"><a href="schedule.html" class="">スケジュール</a></li>
+          <li class="py-2"><a href="https://pf.staging.kindai.design/announcement" class="" target="_blank">全てのお知らせ</a><a href="https://pf.staging.kindai.design/activity/teacher" target="_blank"><img src="images/plus.svg" class="w-4 h-4 inline-block -mt-1 ml-4"></a></li>
           <li class="py-2"><a href="https://pf.staging.kindai.design/student/activity" class="" target="_blank">全ての学びの記録</a></li>
           <li class="py-2"><a href="/" class="">メッセージ<img src="images/plus.svg" class="w-4 h-4 inline-block -mt-1 ml-4"></a></li>
           <li class="py-2"><a href="record.html" class="">学習状況の管理<i class="fa-solid fa-minus text-primary ml-4"></i></a></li>
-          <li class="py-2 pl-4 text-xs"><a href="/" class="">学習プログラム一覧</a></li>
+          <li class="py-2 pl-4 text-xs"><a href="record.html" class="">学習プログラム一覧</a></li>
           <li class="py-2 pl-4 text-xs"><a href="checktest.html" class="">チェックテスト作成</a></li>
           <li class="py-2"><a href="https://pf.staging.kindai.design/library" class="" target="_blank">ライブラリ</a></li>
-          <li class="py-2"><a href="questionnaire_list.html" class="">アンケート<img src="images/plus.svg" class="w-4 h-4 inline-block -mt-1 ml-4"></a></li>
+          <li class="py-2"><a href="questionnaire_list.html" class="">アンケート</a><a href="questionnaire.html"><img src="images/plus.svg" class="w-4 h-4 inline-block -mt-1 ml-4"></a></li>
           <li class="py-2"><a href="https://pf.staging.kindai.design/community" class="" target="_blank">コミュニティ</a></li>
           <li class="py-2"><a href="https://pf.staging.kindai.design/board" class="" target="_blank">掲示板</a></li>
           <li class="py-2 mt-4"><h4 class="flex items-center text-primary before:mr-2 after:ml-2 before:content-[''] before:h-[1px] before:w-4 before:bg-slate-300 after:content-[''] after:h-[1px] after:flex-grow after:bg-slate-300"><span class="">オンライン授業</span></h4></li>
@@ -72,7 +73,7 @@
           <li class="py-2"><a href="/" class="">各種申請</a></li>
           <li class="py-2"><a href="/" class="">成績確認</a></li>
           <li><hr class="mt-2 pb-2"></li>
-          <li class="py-2"><a href="/" class=""><i class="fa-solid fa-gear"></i>登録情報の確認・設定</a></li>
+          <li class="py-2"><a href="setting.html" class=""><i class="fa-solid fa-gear"></i>登録情報の確認・設定</a></li>
           <li><hr class="mt-2 pb-2"></li>
           <li class="py-2"><a href="/" class="">ログイン画面に戻る</a></li>
         </ul>
@@ -86,12 +87,12 @@
             <i class="fa fa-bars text-primary text-xl"></i>
           </button>
           <div class="flex items-center gap-6">
-            <p class="text-red text-sm">
+            <p class="text-red text-sm hidden sm:block">
               いいね<i class="fa-solid fa-heart ml-1"></i>5
             </p>
-            <p class="text-primary text-sm">フォロー12</p>
-            <p class="text-primary text-sm">フォロワー11</p>
-            <p class="text-primary text-sm">
+            <p class="text-primary text-sm hidden sm:block">フォロー12</p>
+            <p class="text-primary text-sm hidden sm:block">フォロワー11</p>
+            <p class="text-primary text-sm hidden sm:block">
               <i class="fa-solid fa-bell mr-1"></i>通知
             </p>
             <div class="w-[45px] h-[45px]">
@@ -140,9 +141,9 @@
             </div>
           </div>
 
-          <div class="relative w-full lg:w-[95%] mx-auto drop-shadow-lg lg:-top-36  bg-white py-5 md:py-4 px-8 lg:rounded-t-lg">
+          <div class="relative w-full lg:w-[95%] mx-auto drop-shadow-lg lg:-top-36 bg-white py-4 md:py-6 md:pb-36 px-4 md:px-8 lg:rounded-t-lg">
             <h3 class="text-lg tracking-wide">2022年12月20日 火曜日</h3>
-            <div class="lg:flex gap-4">
+            <div class="text-sm md:text-base lg:flex gap-8">
               <div class="w-full lg:w-3/5">
                 <section class="mt-8">
                   <div class="flex justify-between border-b pb-1">
@@ -152,7 +153,7 @@
                     ></a>
                   </div>
                   <div class="flex content-center items-center gap-4 mt-4">
-                    <div class="w-3/5">
+                    <div class="w-4/5 sm:w-3/5">
                       <div>
                         <p class="text-slate-500 text-xs font-light">
                           <i class="fa-regular fa-calendar"></i> 2019年6月21日
@@ -172,12 +173,12 @@
                     </div>
                     <div class="flex content-center items-center h-[45px]">
                       <img class="h-full" src="images/01.png" alt="dummy" />
-                      <p class="ml-4 text-sm text-primary">山田 太郎 先生</p>
+                      <p class="ml-4 text-sm text-primary hidden sm:block">山田 太郎 先生</p>
                     </div>
                   </div>
 
                   <div class="flex content-center items-center gap-4 mt-4">
-                    <div class="w-3/5">
+                    <div class="w-4/5 sm:w-3/5">
                       <div>
                         <p class="text-slate-500 text-xs font-light">
                           <i class="fa-regular fa-calendar"></i> 2019年6月21日
@@ -197,12 +198,12 @@
                     </div>
                     <div class="flex content-center items-center h-[45px]">
                       <img class="h-full" src="images/01.png" alt="dummy" />
-                      <p class="ml-4 text-sm text-primary">山田 太郎 先生</p>
+                      <p class="ml-4 text-sm text-primary hidden sm:block">山田 太郎 先生</p>
                     </div>
                   </div>
 
                   <div class="flex content-center items-center gap-4 mt-4">
-                    <div class="w-3/5">
+                    <div class="w-4/5 sm:w-3/5">
                       <div>
                         <p class="text-slate-500 text-xs font-light">
                           <i class="fa-regular fa-calendar"></i> 2019年6月21日
@@ -222,7 +223,7 @@
                     </div>
                     <div class="flex content-center items-center h-[45px]">
                       <img class="h-full" src="images/01.png" alt="dummy" />
-                      <p class="ml-4 text-sm text-primary">山田 太郎 先生</p>
+                      <p class="ml-4 text-sm text-primary hidden sm:block">山田 太郎 先生</p>
                     </div>
                   </div>
                 </section>
@@ -236,7 +237,7 @@
                   </div>
 
                   <div class="flex content-center items-center gap-4 mt-4">
-                    <div class="w-3/5">
+                    <div class="w-4/5 sm:w-3/5">
                       <div>
                         <p class="text-slate-500 text-xs font-light">
                           <i class="fa-regular fa-calendar"></i> 2019年6月21日
@@ -253,12 +254,12 @@
                     </div>
                     <div class="flex content-center items-center h-[45px]">
                       <img class="h-full" src="images/01.png" alt="dummy" />
-                      <p class="ml-4 text-sm text-primary">山田 太郎</p>
+                      <p class="ml-4 text-sm text-primary hidden sm:block">山田 太郎</p>
                     </div>
                   </div>
 
                   <div class="flex content-center items-center gap-4 mt-4">
-                    <div class="w-3/5">
+                    <div class="w-4/5 sm:w-3/5">
                       <div>
                         <p class="text-slate-500 text-xs font-light">
                           <i class="fa-regular fa-calendar"></i> 2019年6月21日
@@ -275,12 +276,12 @@
                     </div>
                     <div class="flex content-center items-center h-[45px]">
                       <img class="h-full" src="images/01.png" alt="dummy" />
-                      <p class="ml-4 text-sm text-primary">山田 太郎</p>
+                      <p class="ml-4 text-sm text-primary hidden sm:block">山田 太郎</p>
                     </div>
                   </div>
 
                   <div class="flex content-center items-center gap-4 mt-4">
-                    <div class="w-3/5">
+                    <div class="w-4/5 sm:w-3/5">
                       <div>
                         <p class="text-slate-500 text-xs font-light">
                           <i class="fa-regular fa-calendar"></i> 2019年6月21日
@@ -297,7 +298,7 @@
                     </div>
                     <div class="flex content-center items-center h-[45px]">
                       <img class="h-full" src="images/01.png" alt="dummy" />
-                      <p class="ml-4 text-sm text-primary">山田 太郎</p>
+                      <p class="ml-4 text-sm text-primary hidden sm:block">山田 太郎</p>
                     </div>
                   </div>
                 </section>
@@ -310,7 +311,7 @@
                     ></a>
                   </div>
                   <div class="flex content-center items-center gap-4 mt-4">
-                    <div class="w-3/5">
+                    <div class="w-4/5 sm:w-3/5">
                       <div>
                         <p class="text-slate-500 text-xs font-light">
                           <i class="fa-regular fa-calendar"></i> 2019年6月21日
@@ -329,12 +330,12 @@
                     </div>
                     <div class="flex content-center items-center h-[45px]">
                       <img class="h-full" src="images/01.png" alt="dummy" />
-                      <p class="ml-4 text-sm text-primary">山田 太郎</p>
+                      <p class="ml-4 text-sm text-primary hidden sm:block">山田 太郎</p>
                     </div>
                   </div>
 
                   <div class="flex content-center items-center gap-4 mt-4">
-                    <div class="w-3/5">
+                    <div class="w-4/5 sm:w-3/5">
                       <div>
                         <p class="text-slate-500 text-xs font-light">
                           <i class="fa-regular fa-calendar"></i> 2019年6月21日
@@ -353,12 +354,12 @@
                     </div>
                     <div class="flex content-center items-center h-[45px]">
                       <img class="h-full" src="images/01.png" alt="dummy" />
-                      <p class="ml-4 text-sm text-primary">山田 太郎</p>
+                      <p class="ml-4 text-sm text-primary hidden sm:block">山田 太郎</p>
                     </div>
                   </div>
 
                   <div class="flex content-center items-center gap-4 mt-4">
-                    <div class="w-3/5">
+                    <div class="w-4/5 sm:w-3/5">
                       <div>
                         <p class="text-slate-500 text-xs font-light">
                           <i class="fa-regular fa-calendar"></i> 2019年6月21日
@@ -377,7 +378,7 @@
                     </div>
                     <div class="flex content-center items-center h-[45px]">
                       <img class="h-full" src="images/01.png" alt="dummy" />
-                      <p class="ml-4 text-sm text-primary">山田 太郎</p>
+                      <p class="ml-4 text-sm text-primary hidden sm:block">山田 太郎</p>
                     </div>
                   </div>
                 </section>
@@ -390,21 +391,20 @@
                     ></a>
                   </div>
                   <div class="flex content-center items-center gap-4 mt-4">
-                    <div class="w-3/5">
+                    <div class="w-4/5 sm:w-3/5">
                       <div>
                         <p class="text-slate-500 text-xs font-light">
                           <i class="fa-regular fa-calendar"></i> 2019年6月21日
                         </p>
                       </div>
-                      <div class="flex gap-3">
+                      <div class="flex gap-2 md:gap-3">
                         <div class="text-4xl py-2 text-slate-500">
                           <i class="fa-regular fa-file-pdf"></i>
                         </div>
-                        <div>
+                        <div class="truncate">
                           <p class="my-1 truncate">
                             学び生徒110です。テニス部に入りました。
                           </p>
-
                           <h5
                             class="text-xs text-slate-400 font-light tracking-wider"
                           >
@@ -417,12 +417,12 @@
                     </div>
                     <div class="flex content-center items-center h-[45px]">
                       <img class="h-full" src="images/01.png" alt="dummy" />
-                      <p class="ml-4 text-sm text-primary">山田 太郎</p>
+                      <p class="ml-4 text-sm text-primary hidden sm:block">山田 太郎</p>
                     </div>
                   </div>
 
                   <div class="flex content-center items-center gap-4 mt-4">
-                    <div class="w-3/5">
+                    <div class="w-4/5 sm:w-3/5">
                       <div>
                         <p class="text-slate-500 text-xs font-light">
                           <i class="fa-regular fa-calendar"></i> 2019年6月21日
@@ -432,11 +432,10 @@
                         <div class="text-4xl py-2 text-slate-500">
                           <i class="fa-regular fa-file-pdf"></i>
                         </div>
-                        <div>
+                        <div class="truncate">
                           <p class="my-1 truncate">
                             学び生徒110です。テニス部に入りました。
                           </p>
-
                           <h5
                             class="text-xs text-slate-400 font-light tracking-wider"
                           >
@@ -449,11 +448,12 @@
                     </div>
                     <div class="flex content-center items-center h-[45px]">
                       <img class="h-full" src="images/01.png" alt="dummy" />
-                      <p class="ml-4 text-sm text-primary">山田 太郎</p>
+                      <p class="ml-4 text-sm text-primary hidden sm:block">山田 太郎</p>
                     </div>
                   </div>
+
                   <div class="flex content-center items-center gap-4 mt-4">
-                    <div class="w-3/5">
+                    <div class="w-4/5 sm:w-3/5">
                       <div>
                         <p class="text-slate-500 text-xs font-light">
                           <i class="fa-regular fa-calendar"></i> 2019年6月21日
@@ -463,7 +463,7 @@
                         <div class="text-4xl py-2 text-slate-500">
                           <i class="fa-regular fa-file-pdf"></i>
                         </div>
-                        <div>
+                        <div class="truncate">
                           <p class="my-1 truncate">
                             学び生徒110です。テニス部に入りました。
                           </p>
@@ -480,11 +480,14 @@
                     </div>
                     <div class="flex content-center items-center h-[45px]">
                       <img class="h-full" src="images/01.png" alt="dummy" />
-                      <p class="ml-4 text-sm text-primary">山田 太郎</p>
+                      <p class="ml-4 text-sm text-primary hidden sm:block">山田 太郎</p>
                     </div>
                   </div>
                 </section>
 
+              </div>
+
+              <div class="w-full lg:w-2/5 h-full my-8 lg:my-0 rounded-lg">
                 <section class="mt-8">
                   <div class="flex justify-between border-b pb-1">
                     <h4 class="text-sm">キャリアセンターからのお知らせ</h4>
@@ -493,7 +496,7 @@
                     ></a>
                   </div>
                   <div class="flex content-center items-center gap-4 mt-4">
-                    <div class="w-3/5">
+                    <div class="w-4/5 sm:w-3/5">
                       <div>
                         <p class="text-slate-500 text-xs font-light">
                           <i class="fa-regular fa-calendar"></i> 2019年6月21日
@@ -510,12 +513,12 @@
                     </div>
                     <div class="flex content-center items-center h-[45px]">
                       <img class="h-full" src="images/01.png" alt="dummy" />
-                      <p class="ml-4 text-sm text-primary">山田 太郎</p>
+                      <p class="ml-4 text-sm text-primary hidden sm:block">山田 太郎</p>
                     </div>
                   </div>
 
                   <div class="flex content-center items-center gap-4 mt-4">
-                    <div class="w-3/5">
+                    <div class="w-4/5 sm:w-3/5">
                       <div>
                         <p class="text-slate-500 text-xs font-light">
                           <i class="fa-regular fa-calendar"></i> 2019年6月21日
@@ -532,12 +535,11 @@
                     </div>
                     <div class="flex content-center items-center h-[45px]">
                       <img class="h-full" src="images/01.png" alt="dummy" />
-                      <p class="ml-4 text-sm text-primary">山田 太郎</p>
+                      <p class="ml-4 text-sm text-primary hidden sm:block">山田 太郎</p>
                     </div>
                   </div>
-
                   <div class="flex content-center items-center gap-4 mt-4">
-                    <div class="w-3/5">
+                    <div class="w-4/5 sm:w-3/5">
                       <div>
                         <p class="text-slate-500 text-xs font-light">
                           <i class="fa-regular fa-calendar"></i> 2019年6月21日
@@ -554,14 +556,11 @@
                     </div>
                     <div class="flex content-center items-center h-[45px]">
                       <img class="h-full" src="images/01.png" alt="dummy" />
-                      <p class="ml-4 text-sm text-primary">山田 太郎</p>
+                      <p class="ml-4 text-sm text-primary hidden sm:block">山田 太郎</p>
                     </div>
                   </div>
                 </section>
-              </div>
-
-              <div class="w-full lg:w-2/5 bg-primary/10 h-full my-8 lg:my-0 px-4 rounded-lg">
-                <section class="py-8">
+              <!-- <section class="py-8">
                   <div class="flex justify-between border-b pb-1">
                     <h4 class="text-sm h-6">本日のサロン講座</h4>
                     <a class="text-primary" href="#"
@@ -846,7 +845,9 @@
                       <p class="pt-[180%]">18</p>
                     </div>
                   </div>
-                </section>
+                </section> -->
+
+
               </div>
             </div>
           </div>
@@ -872,7 +873,7 @@
 
               <small>&copy; KINDAI UNIVERSITY All Rights Reserved.</small>
             </div>
-            <div class="flex items-center">
+            <div class="sm:flex items-center">
               <div>
                 <img class="w-60" src="images/kindai_logo.png" alt="" />
               </div>
